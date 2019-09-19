@@ -18,5 +18,9 @@ public:
 	ATank* GetControlledTank() const;
 
 	virtual void BeginPlay() override;
+
+	virtual void Tick(float DeltaTime) override;
+	//метод перемещяет ствол туда где перекрестие пересекается с миром
+	void AimTowardsCrosshair();
 	
 };
