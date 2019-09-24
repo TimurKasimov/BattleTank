@@ -22,5 +22,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	//метод перемещ€ет ствол туда где перекрестие пересекаетс€ с миром
 	void AimTowardsCrosshair();
-	
+
+	//ћы возвращ€ем внешний пареметр будет True если будет попадание в ландшафт
+	bool GetSightRayHitLocation(FVector& HitLocation) const;
 };
